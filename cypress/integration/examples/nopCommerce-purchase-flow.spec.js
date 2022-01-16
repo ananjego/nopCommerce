@@ -31,7 +31,7 @@ describe('nopCommerce Purchase flow', function () {
     registerPage.clickOnTheRegisterButton();
     registerPage.validateRegisterPageHeader();
 
-    //Register form required fields validation
+    //Register page required fields validation
     registerPage.getRegisterButton().click();
 
     registerPage.validateRegisterFormRequiredFields(
@@ -42,7 +42,7 @@ describe('nopCommerce Purchase flow', function () {
       testData.confirmPasswordError
     );
 
-    //Registration
+    //Register customer
     registerPage.populateRegisterForm(
       testData.firstName,
       testData.lastName,
@@ -60,7 +60,7 @@ describe('nopCommerce Purchase flow', function () {
     registerPage.validateRegistrationSucessMsg(testData.registrationSucessMsg);
 
 
-    // //Account - Customer Info Validation
+    //Account - Customer Info Validation
     customerPage.clickOnTheMyAccountLink();
 
     customerPage.validateCustomerInfo(
