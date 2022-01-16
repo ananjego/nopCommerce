@@ -1,0 +1,10 @@
+{
+    "viewportWidth": 1100,
+    "viewportHeight": 890,
+    "chromeWebSecurity": false,
+    "env" : {
+        "allureResultsPath": "report/allure-results",
+        "allure": true
+      }
+}
+

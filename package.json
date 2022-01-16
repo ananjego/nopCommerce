@@ -1,0 +1,22 @@
+{
+  "name": "nopcommerce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "cypress": "^9.2.1"
+  },
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.23.0",
+    "allure-commandline": "^2.17.2",
+    "del-cli": "^4.0.1"
+  },
+  "scripts": {
+    "test": "node_modules\\.bin\\cypress run",
+    "clearReport": "del-cli --force ./report/allure-results",
+    "openReport": "allure serve ./report/allure-results",
+    "testAndReport": "npm run test; npm run openReport"
+  },
+  "author": "",
+  "license": "ISC"
+}
